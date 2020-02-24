@@ -35,7 +35,7 @@ function Home() {
   };
   return (
     <React.Fragment>
-      <h1 className='banner'>Fibnacci Calculator</h1>
+      <h1 className='banner'>Fibnacci Calculator version 2</h1>
       <div className='container'>
         <FibForm submitValue={submitHandler} />
         <FibRequestInfo values={state.seenIndexes} />
