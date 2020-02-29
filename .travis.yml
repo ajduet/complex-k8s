@@ -12,8 +12,8 @@ before_install:
   - gcloud components update kubectl
   - gcloud auth activate-service-account --key-file service-account.json
   - gcloud config set project august-demo-268819
-  - gcloud config set compute/zone us-central1-a
-  - gcloud container clusters get-credentials msa-demo-2
+  - gcloud config set compute/zone us-east1-b
+  - gcloud container clusters get-credentials msa-demo
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t ajduet/react-test -f ./complex-client/Dockerfile.dev ./complex-client/
 script:
